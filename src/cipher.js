@@ -1,5 +1,6 @@
-window.cipher =/*esto es un objeto se tiene que crear dos metods de cifrar y descifrar dentro de este objeto, los metodos son funciones un metodo esta dentro de un objeto*/
-  let cadena=prompt("Cadena"); /*Declara la variable cadena y guarda el texto introducido en la misma variable*/
+window.cipher ={
+  encode:(offset, string)=>{ /*esto es un objeto se tiene que crear dos metodos de cifrar y descifrar dentro de este objeto, los metodos son funciones un metodo esta dentro de un objeto*/
+  string=prompt("Cadena"); /*Declara la variable cadena y guarda el texto introducido en la misma variable*/
   let tamano=cadena.length;/*Declara y calcula el tamaño de la cadena*/
   let offset=prompt("numero")/*Declara y guarda el offset*/
   let n=parseInt(offset);/*Convierte el offset en un numero entero */
@@ -16,6 +17,7 @@ window.cipher =/*esto es un objeto se tiene que crear dos metods de cifrar y des
     ciffer=(ascii-65+n)%25+65;/*formula para el cifrado cesar*/
     console.log(ciffer);/*solo para pruebas*/
     b=b+String.fromCharCode(ciffer);/*Obtiene los caracteres cifrados, se concatenan para ontener la cadena y no solo un caracter*/
- }
-  console.log(b); /*solo para pruebas*/
-}
+    }
+   console.log(b); /*solo para pruebas*/
+   },
+};
