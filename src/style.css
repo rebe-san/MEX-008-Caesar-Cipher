@@ -1,0 +1,53 @@
+/*Muestra o oculta secciones del html*/
+.disappear{
+  display: none;
+}
+
+/*Define las propiedades del fondo*/
+body{
+  background-image: url("pattern1.png");
+
+}
+
+h1{
+  color: #FAE300;
+  font-family: 'Dancing Script', cursive;
+  font-size:100px;
+  text-align: center;
+}
+
+.button{
+  color: #FFFFFF;
+  background-color: #FA0060;
+  color:white;
+  /*margin: 20px 20px;Pone margenes alrededor del elemnto*/
+  /*padding:40px;ancho del  elemento
+  border: green 2px solid; pone borde al elemento*/
+
+  margin: 20px 20px;
+  align-content: center;
+  cursor: pointer;
+  border:none;
+
+}
+
+div{
+  border: white 1px solid;
+  margin: 20px 20px;
+  width: auto;
+  height: 90vh;
+  text-align: center;
+
+}
+
+/*start-button,#hide-button,#discover-button,#hide,#discover,#menu-button,
+#discover-back-button,#hide-back-button
+{
+  display: block;
+  margin: 20px 20px;/*Pone margenes alrededor del elemnto*/
+  /*padding:40px;ancho del  elemento */
+  /*border: green 2px solid; pone borde al elemento*/
+/*  width: :40px;
+  height:40px;
+}
+*/
