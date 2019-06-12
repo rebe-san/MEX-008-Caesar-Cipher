@@ -26,7 +26,7 @@ window.cipher ={/*esto es un objeto se tiene que crear dos metodos de cifrar y d
      /*console.log(ascii);/*solo para pruebas*/
      /*console.log(offset);/*solo para pruebas*/
      /*console.log(n);/*solo para pruebas*/
-     ciffer=90+(90-ascii+n)%26;/*formula para el cifrado cesar*/
+     ciffer=90-(90-ascii+n)%26;/*formula para el cifrado cesar*/
      /*console.log(ciffer);/*solo para pruebas*/
      b=b+String.fromCharCode(ciffer);/*Obtiene los caracteres cifrados, se concatenan para ontener la cadena y no solo un caracter*/
      }

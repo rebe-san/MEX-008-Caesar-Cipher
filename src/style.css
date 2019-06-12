@@ -17,21 +17,20 @@ h1{
 }
 
 .button{
-  color: #FFFFFF;
-  background-color: #FF0D5E;
-  color:white;
-  /*margin: 20px 20px;Pone margenes alrededor del elemnto*/
-  /*padding:40px;ancho del  elemento
-  border: green 2px solid; pone borde al elemento*/
-
-  margin: 20px 20px;
+  color: #EB5EDC;
+  background-color:#59FFEA;
+  /*padding:40px;ancho del  elemento*/
+  margin: 20px 20px; /*Pone margenes alrededor del elemnto*/
   align-content: center;
   cursor: pointer;
-  border:none;
+  border:none;/*pone o no borde al elemento*/
   width:auto;/*Largo*/
-  height:40px/*ancho*/
-
+  height:auto; /*ancho*/
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight:bold;
+  font-size: 20px;
 }
+
 
 div{
   border: white 1px solid;

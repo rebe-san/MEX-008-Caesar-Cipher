@@ -29,7 +29,8 @@ const showDiscoverPage=()=>{
 const hideMessage=()=>{
   showHideMessage.classList.remove('disappear');
   hidePage.classList.add('disappear');
-  
+  /*const string=document.getElementById("message-to-hide").value;/*Obtiene le valor de la variable string*/
+  /*const offset=document.getElementById("hide-key").value;/*Obtiene le valor de la variable offset*/
 }
 
 const discoverMessage=()=>{
