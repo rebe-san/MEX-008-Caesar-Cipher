@@ -18,7 +18,7 @@ h1{
 
 .button{
   color: #FFFFFF;
-  background-color: #FA0060;
+  background-color: #FF0D5E;
   color:white;
   /*margin: 20px 20px;Pone margenes alrededor del elemnto*/
   /*padding:40px;ancho del  elemento
@@ -28,6 +28,8 @@ h1{
   align-content: center;
   cursor: pointer;
   border:none;
+  width:auto;/*Largo*/
+  height:40px/*ancho*/
 
 }
 
@@ -35,19 +37,14 @@ div{
   border: white 1px solid;
   margin: 20px 20px;
   width: auto;
-  height: 90vh;
+  height: 90vh;/* vh se adapta al dispositivo en el que se este mostrando*/
   text-align: center;
+  background-color: #FF4CB5;
 
 }
 
-/*start-button,#hide-button,#discover-button,#hide,#discover,#menu-button,
-#discover-back-button,#hide-back-button
-{
-  display: block;
-  margin: 20px 20px;/*Pone margenes alrededor del elemnto*/
-  /*padding:40px;ancho del  elemento */
-  /*border: green 2px solid; pone borde al elemento*/
-/*  width: :40px;
-  height:40px;
+p{
+  font-size:40px;
+  font-family: 'Roboto', sans-serif;
+  color:white;
 }
-*/

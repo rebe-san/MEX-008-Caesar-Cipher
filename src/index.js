@@ -29,6 +29,7 @@ const showDiscoverPage=()=>{
 const hideMessage=()=>{
   showHideMessage.classList.remove('disappear');
   hidePage.classList.add('disappear');
+  
 }
 
 const discoverMessage=()=>{

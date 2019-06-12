@@ -10,8 +10,8 @@ window.cipher ={/*esto es un objeto se tiene que crear dos metodos de cifrar y d
       ciffer=(ascii-65+offsetTwo)%26+65;/*formula para el cifrado cesar*/
       ascciEncrypted=ascciEncrypted+String.fromCharCode(ciffer);/*Obtiene los caracteres cifrados, se concatenan para ontener la cadena y no solo un caracter*/
     }
-   return ascciEncrypted;
-   },
+    return ascciEncrypted;
+  },
 
    decode:(offset, string)=>{
    let tamano=string.length;/*Declara y calcula el tamaño de la cadena*/
@@ -26,7 +26,7 @@ window.cipher ={/*esto es un objeto se tiene que crear dos metodos de cifrar y d
      /*console.log(ascii);/*solo para pruebas*/
      /*console.log(offset);/*solo para pruebas*/
      /*console.log(n);/*solo para pruebas*/
-     ciffer=(ascii-65+n)%26+65;/*formula para el cifrado cesar*/
+     ciffer=(ascii-65+n);/*formula para el cifrado cesar*/
     /*console.log(ciffer);/*solo para pruebas*/
      b=b+String.fromCharCode(ciffer);/*Obtiene los caracteres cifrados, se concatenan para ontener la cadena y no solo un caracter*/
      }
