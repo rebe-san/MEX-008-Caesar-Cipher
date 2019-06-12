@@ -11,6 +11,7 @@ window.cipher ={/*esto es un objeto se tiene que crear dos metodos de cifrar y d
       ascciEncrypted=ascciEncrypted+String.fromCharCode(ciffer);/*Obtiene los caracteres cifrados, se concatenan para ontener la cadena y no solo un caracter*/
     }
     return ascciEncrypted;
+
   },
 
    decode:(offset, string)=>{
@@ -20,17 +21,10 @@ window.cipher ={/*esto es un objeto se tiene que crear dos metodos de cifrar y d
    let ciffer;/*Declara la variable ciffer que es donde se guardara el codigo ascci del caracter cifrado*/
    let b="";/*Declara la variable b donde se guarda el caracter cifrado*/
    for (let i=0;i<tamano;i++){/*realiza un ciclo desde o hasta tamano-1*/
-     /*console.log(i);/*solo para pruebas*/
      ascii=string.charCodeAt(i);/*Guarda el codigo ascci del caracter con indice i de la cadena introducida*/
-     /*console.log(ascii);/*solo para pruebas*/
-     /*console.log(ascii);/*solo para pruebas*/
-     /*console.log(offset);/*solo para pruebas*/
-     /*console.log(n);/*solo para pruebas*/
      ciffer=90-(90-ascii+n)%26;/*formula para el cifrado cesar*/
-     /*console.log(ciffer);/*solo para pruebas*/
      b=b+String.fromCharCode(ciffer);/*Obtiene los caracteres cifrados, se concatenan para ontener la cadena y no solo un caracter*/
      }
-    /*console.log(b); *solo para pruebas*/
     return b;
     },
 };

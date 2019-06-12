@@ -29,8 +29,9 @@ const showDiscoverPage=()=>{
 const hideMessage=()=>{
   showHideMessage.classList.remove('disappear');
   hidePage.classList.add('disappear');
-  /*const string=document.getElementById("message-to-hide").value;/*Obtiene le valor de la variable string*/
-  /*const offset=document.getElementById("hide-key").value;/*Obtiene le valor de la variable offset*/
+  const string=document.getElementById("message-to-hide").value;/*Obtiene le valor de la variable string*/
+  const offset=document.getElementById("hide-key").value;/*Obtiene le valor de la variable offset*/
+  window.cipher.encode(offset,string);/*invoca al metodo que se ecnuntra en window.cipher , hay que escribir la "ruta" hacia donde esta el codigo*/
 }
 
 const discoverMessage=()=>{
