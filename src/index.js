@@ -1,3 +1,4 @@
+/*Declaracion de variables*/
 const root=document.getElementById("root");
 const menu=document.getElementById("menu");
 const startButton=document.getElementById("start-button")
@@ -10,7 +11,7 @@ const discoverButton=document.getElementById("discover-button-2");
 const showHideMessagePage=document.getElementById("show-hide-message-page");
 const showDiscoverMessagePage=document.getElementById("show-discover-message-page");
 
-
+/*Declaracion de funciones*/
 const menuPage = () => {
   menu.classList.remove('disappear');
   root.classList.add('disappear');
@@ -29,9 +30,9 @@ const showDiscoverPage=()=>{
 const showHideMessage=()=>{
   showHideMessagePage.classList.remove('disappear');
   hidePage.classList.add('disappear');
-  const string=document.getElementById("message-to-hide").value;/*Obtiene le valor de la variable string*/
-  const offset=document.getElementById("hide-key").value;/*Obtiene le valor de la variable offset*/
-  /*window.cipher.encode(offset,string);/*invoca al metodo que se ecnuntra en window.cipher , hay que escribir la "ruta" hacua */
+  let string=document.getElementById("message-to-hide").value;/*Obtiene le valor de la variable string*/
+  let offset=document.getElementById("hide-key").value;/*Obtiene le valor de la variable offset*/
+  /*window.cipher.encode(offset,string);//invoca al metodo que se ecnuntra en window.cipher , hay que escribir la "ruta" hacua */
   document.getElementById("hide-message").innerHTML = window.cipher.encode(offset,string);
 }
 
@@ -44,6 +45,7 @@ const showDiscoverMessage=()=>{
   document.getElementById("discover-message").innerHTML = window.cipher.decode(offset,string);
 }
 
+/*Declaracion de eventos*/
 startButton.addEventListener('click',menuPage);
 hide.addEventListener('click',showHidePage);
 discover.addEventListener('click',showDiscoverPage);

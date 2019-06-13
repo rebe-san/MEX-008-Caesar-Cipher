@@ -4,24 +4,25 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <!--Pantalla inicio-->
     <div id="root" class="">
       <h1>Confesiones y Secretos </h1>
-      <br>
       <button id="start-button" class="button" >Comenzar</button>
    </div>
     <!--Pantalla con las opciones de cifrar y descifrar -->  <!-- --><!-- -->
     <div id="menu" class="disappear">
       <br> <br>
-      <br> <br>
-      <br> <br>
+      <br> <br><br>
       <p>¿Quieres esconder o descubrir un secreto?</p>
+      <br> <br>
+      <br>
       <button id="hide-button-1" class="button">ESCONDER</button>
       <button id="discover-button-1" class="button">DESCUBRIR</button>
     </div>
@@ -30,22 +31,24 @@
     <div id="hide-page" class="disappear">
       <!--Cambiar p por label???-->
       <p>Escribe el mensaje que quieres esconder</p>
-      <input  type="text-box" id="message-to-hide">
+      <textarea id="message-to-hide"></textarea>
       <br>
       <p>Elige la llave para mantener a salvo tu secreto</p>
-      <input type="text-box" id="hide-key" class="dissapear">
+      <textarea id="hide-key"></textarea>
       <br>
       <br>
       <button id="hide-button-2" class="button" >Esconder</button>
+      <br>
       <button id="menu-button" class="button">Regresar a Menu</button>
     </div>
 
     <!--Pantalla para descifrar mensaje -->
     <div id="discover-page" class="disappear">
       <p>Escribe el mensaje oculto que quieres descubrir</p>
-      <input type="text-box" id="message-to-discover">
+      <textarea id="message-to-discover"></textarea>
+      <br>
       <p>Introduce la llave secreta que te fue dada</p>
-      <input type="text-box" id="discover-key">
+      <textarea id="discover-key"></textarea>
       <br>
       <br>
       <button id="discover-button-2" class="button">Descubrir</button>

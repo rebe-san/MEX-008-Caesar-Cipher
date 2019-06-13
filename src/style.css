@@ -12,38 +12,63 @@ body{
 h1{
   color: #FAE300;
   font-family: 'Dancing Script', cursive;
-  font-size:100px;
+  font-size: 100px;
   text-align: center;
 }
 
 .button{
-  color: #EB5EDC;
-  background-color:#59FFEA;
-  /*padding:40px;ancho del  elemento*/
+  color: #7B00FF;
+  background-color: #59FFEA;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 20px 20px; /*Pone margenes alrededor del elemnto*/
   align-content: center;
   cursor: pointer;
   border:none;/*pone o no borde al elemento*/
-  width:auto;/*Largo*/
-  height:auto; /*ancho*/
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight:bold;
+  width:auto;/*Ajusta el Largo*/
+  height:auto; /*ajusta el ancho*/
+  font-family: 'Roboto Condensed', sans-serif; /*Establece la tipografia*/
+  font-weight:bold;/*Aplica negritas al texto*/
   font-size: 20px;
 }
 
 
 div{
+  padding: 30px;
   border: white 1px solid;
-  margin: 20px 20px;
+  margin: 50px;
   width: auto;
-  height: 90vh;/* vh se adapta al dispositivo en el que se este mostrando*/
+  height: 80vh;/* vh se adapta al dispositivo en el que se este mostrando*/
   text-align: center;
   background-color: #FF4CB5;
 
 }
 
 p{
-  font-size:40px;
-  font-family: 'Roboto', sans-serif;
-  color:white;
+  font-size: 30px;
+  font-family: 'Courgette', cursive;
+  color: #FAE300;
+  font-weight:bold;/*Aplica negritas al texto*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+#discover-message,#hide-message{/*modifica las propiedades de los elementos con el id  señalado*/
+  font-size: 40px;
+  font-family: 'Noto Sans HK', sans-serif;
+  height: 150px;
+  color: #8000D1;
+}
+
+#message-to-discover,#message-to-hide{
+  height: 100px;
+  width: 550px
+}
+
+#hide-key, #discover-key{
+  width: 83px;
+  height: 41px;
 }
