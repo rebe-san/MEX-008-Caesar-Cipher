@@ -8,23 +8,22 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   </head>
+
   <body>
-
-
     <!--Pantalla inicio-->
-  <div id="root" class="">
+    <div id="root" class="">
       <h1>Confesiones y Secretos </h1>
       <br>
       <button id="start-button" class="button" >Comenzar</button>
-  </div>
+   </div>
     <!--Pantalla con las opciones de cifrar y descifrar -->  <!-- --><!-- -->
     <div id="menu" class="disappear">
       <br> <br>
       <br> <br>
       <br> <br>
       <p>¿Quieres esconder o descubrir un secreto?</p>
-      <button id="hide" class="button">ESCONDER</button>
-      <button id="discover" class="button">DESCUBRIR</button>
+      <button id="hide-button-1" class="button">ESCONDER</button>
+      <button id="discover-button-1" class="button">DESCUBRIR</button>
     </div>
 
     <!--Pantalla para cifrar mensaje -->
@@ -37,9 +36,9 @@
       <input type="text-box" id="hide-key" class="dissapear">
       <br>
       <br>
-      <button id="hide-button" class="button" >Esconder</button>
+      <button id="hide-button-2" class="button" >Esconder</button>
       <button id="menu-button" class="button">Regresar a Menu</button>
-   </div>
+    </div>
 
     <!--Pantalla para descifrar mensaje -->
     <div id="discover-page" class="disappear">
@@ -49,27 +48,27 @@
       <input type="text-box" id="discover-key">
       <br>
       <br>
-      <button id="discover-button" class="button">Descubrir</button>
-
+      <button id="discover-button-2" class="button">Descubrir</button>
     </div>
 
     <!--Muestra el mensaje cifrado -->
-    <div id="hide-message" class="disappear">
+    <div id="show-hide-message-page" class="disappear">
       <p>Este es el mensaje oculto</p>
-      <p id="show-hide-message"></p>
+      <p id="hide-message"></p>
       <p>No olvides compartir tu mensaje y la llave a quien tu quieras para que descubra tu mensaje </p>
       <button id="discover-back-button" class="button">Descubrir otro secreto</button>
       <button id="hide-back-button" class="button">Esconder otro secreto</button>
-
     </div>
 
     <!--Muestra el mensaje descifrado -->
-    <div id="discover-message" class="disappear">
+    <div id="show-discover-message-page" class="disappear">
         <p>El mensaje descubierto es:</p>
-        <p id="show-discover-Message"></p>
+        <p id="discover-message"></p>
     </div>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+
   </body>
+
 </html>

@@ -14,18 +14,18 @@ window.cipher ={/*esto es un objeto se tiene que crear dos metodos de cifrar y d
 
   },
 
-   decode:(offset, string)=>{
+   decode:(offset, string)=>{/**Metodo decode(offset,string)*/
    let tamano=string.length;/*Declara y calcula el tamaño de la cadena*/
-   let n=parseInt(offset);/*Convierte el offset en un numero entero */
+   let offsetTwo=parseInt(offset);/*Convierte el offset en un numero entero */
    let ascii;/*Declara la variable ascci donde se guardara el codigo ascci del caracter introducido*/
    let ciffer;/*Declara la variable ciffer que es donde se guardara el codigo ascci del caracter cifrado*/
-   let b="";/*Declara la variable b donde se guarda el caracter cifrado*/
+   let ascciiDecrypted="";/*Declara la variable b donde se guarda el caracter cifrado*/
    for (let i=0;i<tamano;i++){/*realiza un ciclo desde o hasta tamano-1*/
      ascii=string.charCodeAt(i);/*Guarda el codigo ascci del caracter con indice i de la cadena introducida*/
-     ciffer=90-(90-ascii+n)%26;/*formula para el cifrado cesar*/
-     b=b+String.fromCharCode(ciffer);/*Obtiene los caracteres cifrados, se concatenan para ontener la cadena y no solo un caracter*/
+     ciffer=90-(90-ascii+offsetTwo)%26;/*formula para el cifrado cesar*/
+     ascciiDecrypted=ascciiDecrypted+String.fromCharCode(ciffer);/*Obtiene los caracteres cifrados, se concatenan para ontener la cadena y no solo un caracter*/
      }
-    return b;
+    return ascciiDecrypted;
     },
 };
 
