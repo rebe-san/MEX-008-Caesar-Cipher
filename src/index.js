@@ -30,18 +30,16 @@ const showDiscoverPage=()=>{
 const showHideMessage=()=>{
   showHideMessagePage.classList.remove('disappear');
   hidePage.classList.add('disappear');
-  let string=document.getElementById("message-to-hide").value;/*Obtiene le valor de la variable string*/
-  let offset=document.getElementById("hide-key").value;/*Obtiene le valor de la variable offset*/
-  /*window.cipher.encode(offset,string);//invoca al metodo que se ecnuntra en window.cipher , hay que escribir la "ruta" hacua */
+  let string=document.getElementById("message-to-hide").value;/*Obtiene el valor de la variable string*/
+  let offset=document.getElementById("hide-key").value;/*Obtiene el valor de la variable offset*/
   document.getElementById("hide-message").innerHTML = window.cipher.encode(offset,string);
 }
 
 const showDiscoverMessage=()=>{
   showDiscoverMessagePage.classList.remove('disappear');
   discoverPage.classList.add('disappear');
-  const string=document.getElementById("message-to-discover").value;/*Obtiene le valor de la variable string*/
-  const offset=document.getElementById("discover-key").value;/*Obtiene le valor de la variable offset*/
-  /*window.cipher.encode(offset,string);/*invoca al metodo que se ecnuntra en window.cipher , hay que escribir la "ruta" hacua */
+  const string=document.getElementById("message-to-discover").value;/*Obtiene el valor de la variable string*/
+  const offset=document.getElementById("discover-key").value;/*Obtiene el valor de la variable offset*/
   document.getElementById("discover-message").innerHTML = window.cipher.decode(offset,string);
 }
 

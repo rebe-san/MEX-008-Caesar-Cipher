@@ -1,36 +1,29 @@
-window.cipher ={/*esto es un objeto se tiene que crear dos metodos de cifrar y descifrar dentro de este objeto, los metodos son funciones un metodo esta dentro de un objeto*/
-  encode:(offset, string)=>{/*Metodo encode(offset,string)*/
-    let tamano=string.length;/*Declara y calcula el tamaño de la cadena*/
-    let offsetTwo=parseInt(offset);/*Convierte el offset en un numero entero */
-    let ascii;/*Declara la variable ascci donde se guardara el codigo ascci del caracter introducido*/
-    let ciffer;/*Declara la variable ciffer que es donde se guardara el codigo ascci del caracter cifrado*/
-    let ascciEncrypted="";/*Declara la variable ascciEncrypted donde se guarda el caracter cifrado*/
-    for (let i=0;i<tamano;i++){/*realiza un ciclo desde o hasta tamano-1*/
-      ascii=string.charCodeAt(i);/*Guarda el codigo ascci del caracter con indice i de la cadena introducida*/
-      ciffer=(ascii-65+offsetTwo)%26+65;/*formula para el cifrado cesar*/
-      ascciEncrypted=ascciEncrypted+String.fromCharCode(ciffer);/*Obtiene los caracteres cifrados, se concatenan para ontener la cadena y no solo un caracter*/
+window.cipher ={//Cipher es objeto se tiene que crear dos metodos de cifrar y descifrar dentro de este objeto, los metodos son funciones que estan dentro de un objeto
+  encode:(offset, string)=>{//Metodo encode(offset,string)
+    let ascciEncrypted="";//Declara la variable ascciEncrypted donde se guarda el caracter cifrado
+    for (let i=0;i<string.length;i++){//realiza un ciclo for desde 0 hasta tamano-1
+      let ascci=string.charCodeAt(i);
+      let ciffer;
+      if(97<=ascci<=122)
+      {
+        ciffer=(string.charCodeAt(i)-97+parseInt(offset))%26+97;//formula para el cifrado cesar
+      }
+
+      else if(65<=ascci<=90)
+      {
+        ciffer=(string.charCodeAt(i)-65+parseInt(offset))%26+65;//formula para el cifrado cesar
+      }
+
+      ascciEncrypted=ascciEncrypted+String.fromCharCode(ciffer);
     }
     return ascciEncrypted;
-
   },
-
-   decode:(offset, string)=>{/**Metodo decode(offset,string)*/
-   let tamano=string.length;/*Declara y calcula el tamaño de la cadena*/
-   let offsetTwo=parseInt(offset);/*Convierte el offset en un numero entero */
-   let ascii;/*Declara la variable ascci donde se guardara el codigo ascci del caracter introducido*/
-   let ciffer;/*Declara la variable ciffer que es donde se guardara el codigo ascci del caracter cifrado*/
-   let ascciiDecrypted="";/*Declara la variable b donde se guarda el caracter cifrado*/
-   for (let i=0;i<tamano;i++){/*realiza un ciclo desde o hasta tamano-1*/
-     ascii=string.charCodeAt(i);/*Guarda el codigo ascci del caracter con indice i de la cadena introducida*/
-     ciffer=90-(90-ascii+offsetTwo)%26;/*formula para el cifrado cesar*/
-     ascciiDecrypted=ascciiDecrypted+String.fromCharCode(ciffer);/*Obtiene los caracteres cifrados, se concatenan para ontener la cadena y no solo un caracter*/
+   decode:(offset, string)=>{//Metodo decode(offset,string)
+   let ascciiDecrypted="";//Declara la variable ascciDecrypted donde se guarda el caracter descifrado
+   for (let i=0;i<string.length;i++){//realiza un ciclo  for desde o hasta tamano-1
+     let ciffer=90-(90-string.charCodeAt(i)+parseInt(offset))%26;//formula para el descifrado cesar
+     ascciiDecrypted=ascciiDecrypted+String.fromCharCode(ciffer);
      }
     return ascciiDecrypted;
     },
 };
-
-
-
-
-
-/*cipher.encode();*/

@@ -1,21 +1,20 @@
-/*Muestra o oculta secciones del html*/
+/*Define la clase disappear*/
 .disappear{
   display: none;
 }
 
-/*Define las propiedades del fondo*/
+/*Define las propiedades de estilo del fondo*/
 body{
-  background-image: url("pattern1.png");
-
+  background-image: url("pattern.png");
 }
-
+/*Define las propiedades de estilo del encabezado principal*/
 h1{
   color: #FAE300;
   font-family: 'Dancing Script', cursive;
   font-size: 100px;
   text-align: center;
 }
-
+/*Define las propiedades de estilo de los botones*/
 .button{
   color: #7B00FF;
   background-color: #59FFEA;
@@ -33,8 +32,7 @@ h1{
   font-weight:bold;/*Aplica negritas al texto*/
   font-size: 20px;
 }
-
-
+/*Define las propiedades de estilo de los div*/
 div{
   padding: 30px;
   border: white 1px solid;
@@ -45,7 +43,7 @@ div{
   background-color: #FF4CB5;
 
 }
-
+/*Define las propiedades de estilo de los parrafos*/
 p{
   font-size: 30px;
   font-family: 'Courgette', cursive;
@@ -54,20 +52,19 @@ p{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-
-#discover-message,#hide-message{/*modifica las propiedades de los elementos con el id  señalado*/
+/*Define las propiedades de estilo de los elementos con el id  señalado**/
+#discover-message,#hide-message{
   font-size: 40px;
   font-family: 'Noto Sans HK', sans-serif;
   height: 150px;
   color: #8000D1;
 }
-
+/*Define las propiedades de estilo de los elementos con el id  señalado**/
 #message-to-discover,#message-to-hide{
   height: 100px;
   width: 550px
 }
-
+/*Define las propiedades de estilo de los elementos con el id  señalado**/
 #hide-key, #discover-key{
   width: 83px;
   height: 41px;
