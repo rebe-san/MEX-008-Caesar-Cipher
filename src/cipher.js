@@ -26,7 +26,21 @@ window.cipher ={//Cipher es objeto se tiene que crear dos metodos de cifrar y de
    decode:(offset, string)=>{
    let charDecrypted="";
    for (let i=0;i<string.length;i++){
-     let cipherCode=90-(90-string.charCodeAt(i)+parseInt(offset))%26;
+     let cipherCode;
+     let asciiCode=string.charCodeAt(i);
+     if(97<=asciiCode && asciiCode<=122)
+     {
+       cipherCode=122-(122-string.charCodeAt(i)+parseInt(offset))%26;
+     }
+
+     else if(65<=asciiCode && asciiCode<=90)
+     {
+       cipherCode=90-(90-string.charCodeAt(i)+parseInt(offset))%26;
+     }
+     else if(32<=asciiCode && asciiCode<=64)
+     {
+       cipherCode=64-(64-string.charCodeAt(i)+parseInt(offset))%33;
+     }
      charDecrypted=charDecrypted+String.fromCharCode(cipherCode);
      }
     return charDecrypted;
