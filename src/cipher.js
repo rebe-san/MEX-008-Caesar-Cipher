@@ -1,29 +1,30 @@
 window.cipher ={//Cipher es objeto se tiene que crear dos metodos de cifrar y descifrar dentro de este objeto, los metodos son funciones que estan dentro de un objeto
-  encode:(offset, string)=>{//Metodo encode(offset,string)
-    let ascciEncrypted="";//Declara la variable ascciEncrypted donde se guarda el caracter cifrado
-    for (let i=0;i<string.length;i++){//realiza un ciclo for desde 0 hasta tamano-1
-      let ascci=string.charCodeAt(i);
-      let ciffer;
-      if(97<=ascci<=122)
+//Metodo encode(offset,string)
+  encode:(offset, string)=>{
+    let charEncrypted="";
+    for (let i=0;i<string.length;i++){
+      let cipherCode;
+      let asciiCode=string.charCodeAt(i);
+      if(97<=asciiCode && asciiCode<=122)
       {
-        ciffer=(string.charCodeAt(i)-97+parseInt(offset))%26+97;//formula para el cifrado cesar
+        cipherCode=(string.charCodeAt(i)-97+parseInt(offset))%26+97;
       }
 
-      else if(65<=ascci<=90)
+      else if(65<=asciiCode && asciiCode<=90)
       {
-        ciffer=(string.charCodeAt(i)-65+parseInt(offset))%26+65;//formula para el cifrado cesar
+        cipherCode=(string.charCodeAt(i)-65+parseInt(offset))%26+65;
       }
-
-      ascciEncrypted=ascciEncrypted+String.fromCharCode(ciffer);
+      charEncrypted=charEncrypted+String.fromCharCode(cipherCode);
     }
-    return ascciEncrypted;
+    return charEncrypted;
   },
-   decode:(offset, string)=>{//Metodo decode(offset,string)
-   let ascciiDecrypted="";//Declara la variable ascciDecrypted donde se guarda el caracter descifrado
-   for (let i=0;i<string.length;i++){//realiza un ciclo  for desde o hasta tamano-1
-     let ciffer=90-(90-string.charCodeAt(i)+parseInt(offset))%26;//formula para el descifrado cesar
-     ascciiDecrypted=ascciiDecrypted+String.fromCharCode(ciffer);
+  //Metodo decode(offset,string)
+   decode:(offset, string)=>{
+   let charDecrypted="";
+   for (let i=0;i<string.length;i++){
+     let cipherCode=90-(90-string.charCodeAt(i)+parseInt(offset))%26;
+     charDecrypted=charDecrypted+String.fromCharCode(cipherCode);
      }
-    return ascciiDecrypted;
+    return charDecrypted;
     },
 };
