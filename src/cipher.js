@@ -14,6 +14,10 @@ window.cipher ={//Cipher es objeto se tiene que crear dos metodos de cifrar y de
       {
         cipherCode=(string.charCodeAt(i)-65+parseInt(offset))%26+65;
       }
+      else if(32<=asciiCode && asciiCode<=64)
+      {
+        cipherCode=(string.charCodeAt(i)-32+parseInt(offset))%33+32;
+      }
       charEncrypted=charEncrypted+String.fromCharCode(cipherCode);
     }
     return charEncrypted;
