@@ -10,6 +10,10 @@ const hideButton=document.getElementById("hide-button-2");
 const discoverButton=document.getElementById("discover-button-2");
 const showHideMessagePage=document.getElementById("show-hide-message-page");
 const showDiscoverMessagePage=document.getElementById("show-discover-message-page");
+const startBackButton=document.getElementById("start-back-button-one");
+const menuBackButton=document.getElementById("menu-back-button-one");
+const startBackButtonTwo=document.getElementById("start-back-button-two");
+const menuBackButtonTwo=document.getElementById("menu-back-button-two");
 
 /*Declaracion de funciones*/
 const menuPage = () => {
@@ -43,9 +47,25 @@ const showDiscoverMessage=()=>{
   document.getElementById("discover-message").innerHTML = window.cipher.decode(offset,string);
 }
 
+const beginBack=()=>{
+  root.classList.remove('disappear');
+  showHideMessagePage.classList.add('disappear');
+  showDiscoverMessagePage.classList.add('disappear');
+}
+
+const menuBack=()=>{
+  menu.classList.remove('disappear');
+  showHideMessagePage.classList.add('disappear');
+  showDiscoverMessagePage.classList.add('disappear');
+}
+
 /*Declaracion de eventos*/
 startButton.addEventListener('click',menuPage);
 hide.addEventListener('click',showHidePage);
 discover.addEventListener('click',showDiscoverPage);
 hideButton.addEventListener('click',showHideMessage);
 discoverButton.addEventListener('click',showDiscoverMessage);
+startBackButton.addEventListener('click',beginBack);
+menuBackButton.addEventListener('click',menuBack);
+startBackButtonTwo.addEventListener('click',beginBack);
+menuBackButtonTwo.addEventListener('click',menuBack);

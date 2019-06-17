@@ -5,23 +5,35 @@
 
 /*Define las propiedades de estilo del fondo*/
 body{
-  background-image: url("pattern.png");
+  margin: 0;
+  padding: 0;
+  background-image: url("Images/background_image.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
+
 }
 /*Define las propiedades de estilo del encabezado principal*/
 h1{
-  color: #FAE300;
-  font-family: 'Dancing Script', cursive;
-  font-size: 100px;
+  color: #001BCC;/*#FFDF00;*/
+  font-family: 'Noto Sans HK', sans-serif;/*font-family: 'Dancing Script', cursive;*/
+  font-size: 80px;
   text-align: center;
+
+}
+
+h2,p,label{
+  color: #050638;
+  font-family: 'Noto Sans HK', sans-serif;/*font-family: 'Dancing Script', cursive;*/
+  font-size: 25px;
+  text-align: center;
+  font-weight:bold;
+  margin: 0px
 }
 /*Define las propiedades de estilo de los botones*/
 .button{
-  color: #7B00FF;
-  background-color: #59FFEA;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  color: #FF5101;/* #7B00FF;*/
+  background-color:#050638;/*#73F2FF;/*#59FFEA;*/
+  padding: 10px;
   margin: 20px 20px; /*Pone margenes alrededor del elemnto*/
   align-content: center;
   cursor: pointer;
@@ -33,39 +45,59 @@ h1{
   font-size: 20px;
 }
 /*Define las propiedades de estilo de los div*/
-div{
+ /*  div{
   padding: 30px;
-  border: white 1px solid;
   margin: 50px;
   width: auto;
   height: 80vh;/* vh se adapta al dispositivo en el que se este mostrando*/
-  text-align: center;
-  background-color: #FF4CB5;
+/*  text-align: center;
+  /*background-color: /*#FFDF00/*#FF4CB5;*/
 
-}
+
 /*Define las propiedades de estilo de los parrafos*/
-p{
-  font-size: 30px;
+/*p{
+  font-size: 40px;
   font-family: 'Courgette', cursive;
   color: #FAE300;
   font-weight:bold;/*Aplica negritas al texto*/
-  margin-top: 10px;
+/*  margin-top: 10px;
   margin-bottom: 10px;
 }
 /*Define las propiedades de estilo de los elementos con el id  señalado**/
 #discover-message,#hide-message{
-  font-size: 40px;
+  font-size: 15px;
   font-family: 'Noto Sans HK', sans-serif;
-  height: 150px;
-  color: #8000D1;
+  height: 450px;
+  color: #0A1551;
+  background-color: white;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: gray solid 1px;
+  text-align: justify;
 }
 /*Define las propiedades de estilo de los elementos con el id  señalado**/
-#message-to-discover,#message-to-hide{
-  height: 100px;
-  width: 550px
-}
+
 /*Define las propiedades de estilo de los elementos con el id  señalado**/
-#hide-key, #discover-key{
-  width: 83px;
-  height: 41px;
+input{
+  width: 150px;
+  height: 20px;
+}
+
+ div{
+  background: rgba(255, 255, 255, 0.3);/*manipula los colores del fondo*/
+  text-align: center;
+  height: 100vh;
+
+}
+#message-to-hide, #message-to-discover{
+  display: block;
+  width: 1232px;
+  height: 300px;
+  margin-left: 40px;
+  resize:none;/*deja fijo el cuadro de textarea*/
+}
+
+#lock-image{
+  width: 60px;
+  height: 65px;
 }

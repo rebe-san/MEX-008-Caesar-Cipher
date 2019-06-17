@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <link rel="icon" type="image/png" href="Images/icons8-seguridad-48.png" /> <!--Pone una imagen en la barra de direcciones-->
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Noto+Sans+HK|Roboto+Condensed&display=swap" rel="stylesheet">
   </head>
@@ -11,61 +12,61 @@
 
     <!--Pantalla inicio-->
     <div id="root" class="">
-      <h1>Confesiones y Secretos </h1>
+      <br>
+      <h1>MASTER L<img id="lock-image" src="Images/icons8-bloquear-48.png">CK SECURITY</h1>
+      <h2>Working for your safety</h2>
+      <br><br><br>
       <button id="start-button" class="button" >Comenzar</button>
     </div>
 
     <!--Pantalla con las opciones de cifrar y descifrar -->  <!-- --><!-- -->
     <div id="menu" class="disappear">
-      <br> <br>
+      <br> <br><br>  <br> <br>
+      <p>RECUERDA QUE AL SER INFORMACIÓN SENSIBLE:</p>
+      <p>Todos los reportes de estados financieros deben estar CIFRADOS PARA SU ENVIO y<br> deben ser DESCIFRADOS PARA SU RECEPCIÓN por medio de una llave de seguridad.</p>
       <br> <br><br>
-      <p>¿Quieres esconder o descubrir un secreto?</p>
-      <br> <br>
-      <br>
-      <button id="hide-button-1" class="button">ESCONDER</button>
-      <button id="discover-button-1" class="button">DESCUBRIR</button>
+      <button id="hide-button-1" class="button">CIFRAR</button>
+      <button id="discover-button-1" class="button">DESCIFRAR</button>
     </div>
 
     <!--Pantalla para cifrar mensaje -->
     <div id="hide-page" class="disappear">
-      <!--Cambiar p por label???-->
-      <p>Escribe el mensaje que quieres esconder</p>
-      <textarea id="message-to-hide"></textarea>
+      <label for="message-to-hide">Introduce la informacion del reporte que quieres cifrar</label>
+      <textarea id="message-to-hide" placeholder="Escribe aqui el reporte"></textarea>
+      <label for="hide-key">Establece la llave de seguridad</label>
+      <input type="text" id="hide-key" placeholder="Introduce un número">
+      <br><br>
+      <button id="hide-button-2" class="button" >CIFRAR</button>
       <br>
-      <p>Elige la llave para mantener a salvo tu secreto</p>
-      <textarea id="hide-key"></textarea>
-      <br>
-      <br>
-      <button id="hide-button-2" class="button" >Esconder</button>
-      <br>
-      <button id="menu-button" class="button">Regresar a Menu</button>
+
     </div>
 
     <!--Pantalla para descifrar mensaje -->
     <div id="discover-page" class="disappear">
-      <p>Escribe el mensaje oculto que quieres descubrir</p>
-      <textarea id="message-to-discover"></textarea>
+      <label for="message-to-discover">Introduce la informacion del reporte que quieres descifrar</label>
+      <textarea id="message-to-discover" placeholder="Escribe aqui el reporte"></textarea>
       <br>
-      <p>Introduce la llave secreta que te fue dada</p>
-      <textarea id="discover-key"></textarea>
-      <br>
-      <br>
-      <button id="discover-button-2" class="button">Descubrir</button>
+      <label for="discover-key">Establece la llave de seguridad</label>
+      <input id="discover-key" type="text" placeholder="Introduce un número">
+      <br><br>
+      <button id="discover-button-2" class="button">DESCIFRAR</button>
     </div>
 
     <!--Muestra el mensaje cifrado -->
     <div id="show-hide-message-page" class="disappear">
-      <p>Este es el mensaje oculto</p>
+      <p>REPORTE CIFRADO</p>
       <p id="hide-message"></p>
-      <p>No olvides compartir tu mensaje y la llave a quien tu quieras para que descubra tu mensaje </p>
-      <button id="discover-back-button" class="button">Descubrir otro secreto</button>
-      <button id="hide-back-button" class="button">Esconder otro secreto</button>
+      <p>Proporciona el reporte cifrado y la llave de seguridad a la persona autorizada para leer el reporte.</p>
+      <button id="start-back-button-one" class="button">INICIO</button>
+      <button id="menu-back-button-one" class="button">MENU</button>
     </div>
 
     <!--Muestra el mensaje descifrado -->
     <div id="show-discover-message-page" class="disappear">
-        <p>El mensaje descubierto es:</p>
+        <p>REPORTE DESCIFRADO:</p>
         <p id="discover-message"></p>
+        <button id="start-back-button-two" class="button">INICIO</button>
+        <button id="menu-back-button-two" class="button">MENU</button>
     </div>
 
     <script src="cipher.js"></script>
