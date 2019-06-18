@@ -44,6 +44,11 @@ h2,p,label{
   font-weight:bold;/*Aplica negritas al texto*/
   font-size: 20px;
 }
+
+.button:hover{
+ background-color: white;
+
+}
 /*Define las propiedades de estilo de los div*/
  /*  div{
   padding: 30px;
@@ -74,20 +79,22 @@ h2,p,label{
   margin-right: 40px;
   border: gray solid 1px;
   text-align: justify;
+  border-radius: 3px;
 }
 /*Define las propiedades de estilo de los elementos con el id  señalado**/
 
 /*Define las propiedades de estilo de los elementos con el id  señalado**/
 input{
-  width: 150px;
+  width: 160px;
   height: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
 }
 
  div{
   background: rgba(255, 255, 255, 0.3);/*manipula los colores del fondo*/
   text-align: center;
   height: 100vh;
-
 }
 #message-to-hide, #message-to-discover{
   display: block;
@@ -95,6 +102,9 @@ input{
   height: 300px;
   margin-left: 40px;
   resize:none;/*deja fijo el cuadro de textarea*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  border-radius: 3px;
 }
 
 #lock-image{
