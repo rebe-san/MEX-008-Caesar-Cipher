@@ -9,7 +9,6 @@ window.cipher ={//Cipher es objeto se tiene que crear dos metodos de cifrar y de
       {
         cipherCode=(asciiCode-97+parseInt(offset))%26+97;
       }
-
       else if(65<=asciiCode && asciiCode<=90)
       {
         cipherCode=(asciiCode-65+parseInt(offset))%26+65;

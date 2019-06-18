@@ -45,8 +45,9 @@ h2,p,label{
   font-size: 20px;
 }
 
-.button:hover{
+.button:hover{ /*Sombrea el boton cuando pasa por encima el mouse*/
  background-color: white;
+ border: 2px solid black;
 
 }
 /*Define las propiedades de estilo de los div*/
