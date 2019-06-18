@@ -30,21 +30,26 @@ const showDiscoverPage=()=>{
   discoverPage.classList.remove('disappear');
   menu.classList.add('disappear');
 }
-
+/*Invoca a la funcion encode*/
 const showHideMessage=()=>{
+
   showHideMessagePage.classList.remove('disappear');
   hidePage.classList.add('disappear');
-  let string=document.getElementById("message-to-hide").value;/*Obtiene el valor de la variable string*/
-  let offset=document.getElementById("hide-key").value;/*Obtiene el valor de la variable offset*/
-  document.getElementById("hide-message").innerHTML = window.cipher.encode(offset,string);
+  let string=document.getElementById("message-to-hide");/*Obtiene el valor de la variable string*/
+  let offset=document.getElementById("hide-key");/*Obtiene el valor de la variable offset*/
+  document.getElementById("hide-message").innerHTML = window.cipher.encode(offset.value,string.value);
+  document.getElementById("message-to-hide").value = ''; //borra el contenido de la caja de texto
+  document.getElementById("hide-key").value='';
 }
-
+/*Invoca a la funcion decode*/
 const showDiscoverMessage=()=>{
   showDiscoverMessagePage.classList.remove('disappear');
   discoverPage.classList.add('disappear');
-  const string=document.getElementById("message-to-discover").value;/*Obtiene el valor de la variable string*/
-  const offset=document.getElementById("discover-key").value;/*Obtiene el valor de la variable offset*/
-  document.getElementById("discover-message").innerHTML = window.cipher.decode(offset,string);
+  const string=document.getElementById("message-to-discover");/*Obtiene el valor de la variable string*/
+  const offset=document.getElementById("discover-key");/*Obtiene el valor de la variable offset*/
+  document.getElementById("discover-message").innerHTML = window.cipher.decode(offset.value,string.value);
+  document.getElementById("message-to-discover").value='';
+  document.getElementById("discover-key").value='';
 }
 
 const beginBack=()=>{
