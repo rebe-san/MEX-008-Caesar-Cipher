@@ -31,9 +31,10 @@ https://rebe-san.github.io/MEX-008-Cipher/src/index.html
 - Quiénes son los principales usuarios de producto.
   Los usuarios son el personal administrativo y socios o inversionistas de la empresa.
 - Cuáles son los objetivos de estos usuarios en relación con tu producto.
-  El objetivo es mantener de forma confidencial los reportes de estados financieros de una determinada empresa y solo ser revelados por el personal autorizado en este caso a los socios e inversionistas de la empresa, que quieren tener esta información fuera del alcance
+  El objetivo es mantener de forma confidencial los reportes de estados financieros de una determinada empresa los cuales solo pueden ser leídos por el personal autorizado ,en este caso a los socios e inversionistas de la empresa.
 
 - Cómo crees que el producto que estás creando está resolviendo sus problemas.
+  Debido a que la información de la situación financiera de una empresa puede usarse de forma incorrecta para cometer fraudes o ilícitos , la información esta cifrada y solo puede ser leída por la personas autorizada que haya pedido el reporte para conocer la situación de la empresa en la que esta invirtiendo.
 
 #### Interfaz de usuario (UI)
 
@@ -55,14 +56,8 @@ La interfaz permite al usuario:
   Finalmente la idea que fue tomada para el desarrollo del proyecto fue una aplicación para encriptar y desencriptar información financiera de una empresa.
 
 - Prototipado (sketching)
-  Unicamente se realizo el prototipado en papel y se le dio interactividad a través de Marvel y el Sketch se puede ver en el siguiente enlace
-
+  Se realizo el prototipado en papel y se le dio interactividad a través de Marvel y el Sketch se puede ver a continuación
+  Falta enlace
+  https://www.figma.com/file/HoZlqWnKvU3JMbza26I9yzYT/Sketch?node-id=0%3A1
 - Pruebas con usuarios (User Testing) e Iteración.
   El User Testing se realizo solo a tres personas las cuales comentaron la falta de un botón de regreso al inicio , así como la falta de instrucciones en la parte de codificar. Ya no se realizo un nuevo sketch , con las modificaciones propuestas sino se decidió aplicar directamente estos cambios al proyecto.
-
-### Parte Obligatoria
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
-  el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
-  problemas/necesidades de los usuarios.

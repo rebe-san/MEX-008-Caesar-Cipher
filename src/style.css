@@ -106,6 +106,7 @@ input{
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   border-radius: 3px;
+  border-color: #EFEFEF;
 }
 
 #lock-image{
