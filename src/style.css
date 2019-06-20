@@ -39,16 +39,17 @@ input{
 
 /*Define las propiedades de estilo de los elementos con el id  señalado*/
 #discover-message,#hide-message{
-  font-size: 15px;
+  font-size: 17px;
   font-family: 'Roboto', sans-serif;
   height: 450px;
-  color: #0A1551;/*Color de la letra*/
+  color: black;/*Color de la letra*/
   background-color: white;
   margin-left: 40px;
   margin-right: 40px;
   border: gray solid 1px;
   text-align: justify;/*Establce la alineacion del texto*/
   border-radius: 3px;
+  font-weight: normal;
 }
 #message-to-hide, #message-to-discover{
   display: block;
