@@ -23,7 +23,7 @@ Este proyecto fue concebido para dar a conocer a socios o inversionistas de una 
 La aplicación web permite a los encargados de administración de la empresa cifrar la información que sera enviada a los socios/inversionistas utilizando para ello el Cifrado Cesar, mencionado al inicio, cifrada la información sera enviada por los canales de comunicación permitidos , los socios recibirán la información cifrada y la aplicación web se encargara de descifrarla ,utilizando de nuevo el Cifrado Cesar,para tener el reporte de manera legible
 
 Para poder ejecutar la aplicación es necesario seguir la siguiente liga:
-https://rebe-san.github.io/MEX-008-Cipher/src/index.html
+[Cifrado César](https://rebe-san.github.io/MEX-008-Cipher/src/index.html)
 
 
 #### Definición del producto
@@ -53,11 +53,11 @@ La interfaz permite al usuario:
   Lo primero fue pensar en que situaciones se podría implementar el Cifrado Cesar para poder darle una utilidad practica.
   Las primeras ideas que surgieron fueron realizar una aplicación web para un video juego donde se utilizara el cifrado , después la idea fue realizar una aplicación para mensajes secretos entre adolescentes o niñas , con el fin de compartir secretos.
 
-  Finalmente la idea que fue tomada para el desarrollo del proyecto fue una aplicación para encriptar y desencriptar información financiera de una empresa.
+  Finalmente la idea que fue tomada para el desarrollo del proyecto fue una aplicación para cifrar y descifrar información financiera de una empresa.
 
 - Prototipado (sketching)
-  Se realizo el prototipado en papel y se le dio interactividad a través de Marvel y el Sketch se puede ver a continuación
-  Falta enlace
-  https://www.figma.com/file/HoZlqWnKvU3JMbza26I9yzYT/Sketch?node-id=0%3A1
+  Se realizo el prototipado en papel y se le dio interactividad a través de Marvel y el Sketch se realizo en Figma el cual se puede ver a continuación en la siguiennte liga:
+  [Prototipo en Figma](https://www.figma.com/proto/HoZlqWnKvU3JMbza26I9yzYT/Sketch?node-id=12%3A39&scaling=min-zoom)
+
 - Pruebas con usuarios (User Testing) e Iteración.
   El User Testing se realizo solo a tres personas las cuales comentaron la falta de un botón de regreso al inicio , así como la falta de instrucciones en la parte de codificar. Ya no se realizo un nuevo sketch , con las modificaciones propuestas sino se decidió aplicar directamente estos cambios al proyecto.
