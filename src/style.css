@@ -60,7 +60,6 @@ input{
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
   border-radius: 3px;/*Redondea el borde*/
-  border-color: #EFEFEF;
 }
 #lock-image{
   width: 60px;
