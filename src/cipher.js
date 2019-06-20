@@ -17,6 +17,10 @@ window.cipher ={//Objeto Cipher
       {
         cipherCode=(asciiCode-32+parseInt(offset))%33+32;
       }
+      else if(asciiCode>122)
+      {
+        cipherCode=asciiCode;//Los caracteres especiales no los cifran quedan igual.
+      }
       charEncrypted=charEncrypted+String.fromCharCode(cipherCode);//Cadena Cifrada
     }
     return charEncrypted;//Regresa el resultado obtenido ṕor el metodo encode al invocar la funcion
@@ -38,6 +42,10 @@ window.cipher ={//Objeto Cipher
        else if(32<=asciiCode && asciiCode<=64)//Descifra caracteres no alfabeticos
        {
          cipherCode=64-(64-asciiCode+parseInt(offset))%33;
+       }
+       else if(asciiCode>122)
+       {
+         cipherCode=asciiCode;//Los caracteres especiales no los cifran quedan igual.
        }
        charDecrypted=charDecrypted+String.fromCharCode(cipherCode);//Cadena Descifrada
      }

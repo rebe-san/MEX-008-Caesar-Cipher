@@ -16,6 +16,20 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
 En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
 
+##Introduccion.  
+
+  Master Lock Security es una empresa dedicada a la seguridad de la información financiera de las empresas para salva guardar su integridad contra ataques o fuga de información que podrían afectarla.  
+
+  Para tal fin utilizamos el Cifrado Cesar para ocultar la información a terceros y el Descifrado Cesar para tener acceso a ella.
+
+##Misión, Visión y Valores.  
+
+  Nuestra misión es proporcionar servicios de calidad en cuanto a seguridad de la información a las empresas que desean añadir seguridad extra a sus servicios de recepción y entrega de reportes financieros.  
+
+  La Visión es ser una de las principales opciones a elegir de las empresas para mantener su información financiera segura.  
+
+  Nuestros valores son : Compromiso , Honestidad y Eficacia.  
+
 ## Resumen del proyecto
 
 Este proyecto fue concebido para dar a conocer a socios o inversionistas de una empresa la situación financiera de la misma ,sin comprometer la información o que otros tengan acceso ella.
