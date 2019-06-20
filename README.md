@@ -16,13 +16,13 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
 En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
 
-##Introduccion.  
+## Introduccion.  
 
   Master Lock Security es una empresa dedicada a la seguridad de la información financiera de las empresas para salva guardar su integridad contra ataques o fuga de información que podrían afectarla.  
 
   Para tal fin utilizamos el Cifrado Cesar para ocultar la información a terceros y el Descifrado Cesar para tener acceso a ella.
 
-##Misión, Visión y Valores.  
+## Misión, Visión y Valores.  
 
   Nuestra misión es proporcionar servicios de calidad en cuanto a seguridad de la información a las empresas que desean añadir seguridad extra a sus servicios de recepción y entrega de reportes financieros.  
 
@@ -37,7 +37,7 @@ Este proyecto fue concebido para dar a conocer a socios o inversionistas de una 
 La aplicación web permite a los administrativos de una empresa cifrar la información que sera enviada a los socios/inversionistas utilizando para ello el Cifrado Cesar, mencionado al inicio, cifrada la información sera enviada por los canales de comunicación permitidos , los socios recibirán la información cifrada y la aplicación web se encargara de descifrarla ,utilizando de nuevo el Cifrado Cesar,para tener el reporte de manera legible.
 
 Para poder ejecutar la aplicación es necesario seguir la siguiente liga:
-[Cifrado César](https://rebe-san.github.io/MEX-008-Cipher/src/index.html)
+[Master Lock Security](https://rebe-san.github.io/MEX-008-Cipher/src/index.html)
 
 
 #### Definición del producto
@@ -70,9 +70,7 @@ Las primeras ideas que surgieron fueron realizar una aplicación web para un vid
 Finalmente la idea que fue tomada para el desarrollo del proyecto fue una aplicación para cifrar y descifrar información financiera de una empresa.
 
 - Prototipado (sketching)  
-Se realizo el prototipado en papel y se le dio interactividad a través de la aplicación [Marvel][Prototipo en Marvel] para poder visualizar el flujo de la página web y se realizo el [Sketch][Prototipo en Figma] en Figma con la finalidad de ver la apariencia/diseño de la página web.    
-[Prototipo en Figma](https://www.figma.com/proto/HoZlqWnKvU3JMbza26I9yzYT/Sketch?node-id=4%3A7&scaling=min-zoom)
-[Prototipo en Marvel](https://marvelapp.com/)
+Se realizo el prototipado en papel y se le dio interactividad a través de la aplicación [Marvel](https://marvelapp.com/7498d2b) para poder visualizar el flujo de la página web y se realizo el [Sketch](https://www.figma.com/proto/HoZlqWnKvU3JMbza26I9yzYT/Sketch?node-id=4%3A7&scaling=min-zoom) en Figma con la finalidad de ver la apariencia/diseño de la página web.    
 
 - Pruebas con usuarios (User Testing) e Iteración.  
-El User Testing se realizo solo a tres personas las cuales comentaron la falta de un botón de regreso al menú , así como la falta de instrucciones en la parte de codificar. Ya no se realizo un nuevo sketch on las modificaciones propuestas ,sino se decidió aplicar directamente estos cambios al proyecto.
+El User Testing se realizo solo a tres personas las cuales comentaron la falta de un botón de regreso al menú , así como la falta de instrucciones en la parte de codificar. Ya no se realizo un nuevo sketch con las modificaciones propuestas ,sino se decidió aplicar directamente estos cambios al proyecto.
