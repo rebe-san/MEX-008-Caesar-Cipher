@@ -1,46 +1,46 @@
-window.cipher ={//Cipher es objeto se tiene que crear dos metodos de cifrar y descifrar dentro de este objeto, los metodos son funciones que estan dentro de un objeto
+window.cipher ={//Objeto Cipher
 //Metodo encode(offset,string)
   encode:(offset, string)=>{
     let charEncrypted="";
     for (let i=0;i<string.length;i++){
       let cipherCode;
       let asciiCode=string.charCodeAt(i);
-      if(97<=asciiCode && asciiCode<=122)
+      if(97<=asciiCode && asciiCode<=122)//Cifra letras minusculas
       {
         cipherCode=(asciiCode-97+parseInt(offset))%26+97;
       }
-      else if(65<=asciiCode && asciiCode<=90)
+      else if(65<=asciiCode && asciiCode<=90)//Cifra letras mayusculas
       {
         cipherCode=(asciiCode-65+parseInt(offset))%26+65;
       }
-      else if(32<=asciiCode && asciiCode<=64)
+      else if(32<=asciiCode && asciiCode<=64)//Cifra caracteres no alfabeticos
       {
         cipherCode=(asciiCode-32+parseInt(offset))%33+32;
       }
-      charEncrypted=charEncrypted+String.fromCharCode(cipherCode);
+      charEncrypted=charEncrypted+String.fromCharCode(cipherCode);//Cadena Cifrada
     }
-    return charEncrypted;
-  },
+    return charEncrypted;//Regresa el resultado obtenido ṕor el metodo encode al invocar la funcion
+    },
   //Metodo decode(offset,string)
    decode:(offset, string)=>{
-   let charDecrypted="";
-   for (let i=0;i<string.length;i++){
-     let cipherCode;
-     let asciiCode=string.charCodeAt(i);
-     if(97<=asciiCode && asciiCode<=122)
-     {
-       cipherCode=122-(122-asciiCode+parseInt(offset))%26;
+     let charDecrypted="";
+     for (let i=0;i<string.length;i++){
+       let cipherCode;
+       let asciiCode=string.charCodeAt(i);
+       if(97<=asciiCode && asciiCode<=122)//Descifra letras minusculas
+       {
+         cipherCode=122-(122-asciiCode+parseInt(offset))%26;
+       }
+       else if(65<=asciiCode && asciiCode<=90)//Descifra letras mayusculas
+       {
+         cipherCode=90-(90-asciiCode+parseInt(offset))%26;
+       }
+       else if(32<=asciiCode && asciiCode<=64)//Descifra caracteres no alfabeticos
+       {
+         cipherCode=64-(64-asciiCode+parseInt(offset))%33;
+       }
+       charDecrypted=charDecrypted+String.fromCharCode(cipherCode);//Cadena Descifrada
      }
-     else if(65<=asciiCode && asciiCode<=90)
-     {
-       cipherCode=90-(90-asciiCode+parseInt(offset))%26;
-     }
-     else if(32<=asciiCode && asciiCode<=64)
-     {
-       cipherCode=64-(64-asciiCode+parseInt(offset))%33;
-     }
-     charDecrypted=charDecrypted+String.fromCharCode(cipherCode);
-     }
-    return charDecrypted;
-    },
-};
+     return charDecrypted;//Regresa el resultado obtenido ṕor el metodo decode al invocar la funcion
+   },
+ };

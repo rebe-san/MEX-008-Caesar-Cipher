@@ -1,101 +1,54 @@
-/*Define la clase disappear*/
-.disappear{
-  display: none;
-}
-
-/*Define las propiedades de estilo del fondo*/
+/*Define las propiedades de estilo del body*/
 body{
   margin: 0;
   padding: 0;
   background-image: url("Images/background_image.jpg");
-  background-repeat: no-repeat;
-  background-size:100%;
-
+  background-size: cover;/*Establece el tamaño de la imagen de fondo*/
 }
 /*Define las propiedades de estilo del encabezado principal*/
 h1{
-  color: #001BCC;/*#FFDF00;*/
-  font-family: 'Noto Sans HK', sans-serif;/*font-family: 'Dancing Script', cursive;*/
+  color: #001BCC;
+  font-family: 'Noto Sans HK', sans-serif;
   font-size: 80px;
   text-align: center;
-
 }
-
+/*Define las propiedades de estilo del encabezado secundario , parrafos y etiquetas*/
 h2,p,label{
   color: #050638;
-  font-family: 'Noto Sans HK', sans-serif;/*font-family: 'Dancing Script', cursive;*/
+  font-family: 'Noto Sans HK', sans-serif;
   font-size: 25px;
   text-align: center;
   font-weight:bold;
-  margin: 0px
+  margin: 0px;
 }
-/*Define las propiedades de estilo de los botones*/
-.button{
-  color: #FF5101;/* #7B00FF;*/
-  background-color:#050638;/*#73F2FF;/*#59FFEA;*/
-  padding: 10px;
-  margin: 20px 20px; /*Pone margenes alrededor del elemnto*/
-  align-content: center;
-  cursor: pointer;
-  border:none;/*pone o no borde al elemento*/
-  width:auto;/*Ajusta el Largo*/
-  height:auto; /*ajusta el ancho*/
-  font-family: 'Roboto Condensed', sans-serif; /*Establece la tipografia*/
-  font-weight:bold;/*Aplica negritas al texto*/
-  font-size: 20px;
-}
-
-.button:hover{ /*Sombrea el boton cuando pasa por encima el mouse*/
- background-color: white;
- border: 2px solid black;
-
-}
-/*Define las propiedades de estilo de los div*/
- /*  div{
-  padding: 30px;
-  margin: 50px;
-  width: auto;
-  height: 80vh;/* vh se adapta al dispositivo en el que se este mostrando*/
-/*  text-align: center;
-  /*background-color: /*#FFDF00/*#FF4CB5;*/
-
-
-/*Define las propiedades de estilo de los parrafos*/
-/*p{
-  font-size: 40px;
-  font-family: 'Courgette', cursive;
-  color: #FAE300;
-  font-weight:bold;/*Aplica negritas al texto*/
-/*  margin-top: 10px;
-  margin-bottom: 10px;
-}
-/*Define las propiedades de estilo de los elementos con el id  señalado**/
-#discover-message,#hide-message{
-  font-size: 15px;
-  font-family: 'Noto Sans HK', sans-serif;
-  height: 450px;
-  color: #0A1551;
-  background-color: white;
-  margin-left: 40px;
-  margin-right: 40px;
-  border: gray solid 1px;
-  text-align: justify;
-  border-radius: 3px;
-}
-/*Define las propiedades de estilo de los elementos con el id  señalado**/
-
-/*Define las propiedades de estilo de los elementos con el id  señalado**/
+/*Define las propiedades de estilo de los input*/
 input{
   width: 160px;
   height: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
 }
-
+/*Define las propiedades de estilo de los div*/
  div{
-  background: rgba(255, 255, 255, 0.3);/*manipula los colores del fondo*/
+  background: rgba(255, 255, 255, 0.3);
   text-align: center;
   height: 100vh;
+  width: 100vw;
+}
+
+
+/*Define las propiedades de estilo de los elementos con el id  señalado*/
+#discover-message,#hide-message{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  height: 450px;
+  color: #0A1551;/*Color de la letra*/
+  background-color: white;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: gray solid 1px;
+  text-align: justify;/*Establce la alineacion del texto*/
+  border-radius: 3px;
 }
 #message-to-hide, #message-to-discover{
   display: block;
@@ -105,16 +58,39 @@ input{
   resize:none;/*deja fijo el cuadro de textarea*/
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
-  border-radius: 3px;
+  border-radius: 3px;/*Redondea el borde*/
   border-color: #EFEFEF;
 }
-
 #lock-image{
   width: 60px;
   height: 65px;
 }
-
+/*Define la clase disappear*/
+.disappear{
+  display: none;
+}
+/*Define las propiedades de estilo de la clase indicada*/
 .lock-image-1{
   width: 25px;
   height: 25px;
+}
+/*Define las propiedades de estilo de los botones*/
+.button{
+  color: #FF5101;
+  background-color:#050638;
+  padding: 10px;
+  margin: 20px 20px;
+  align-content: center;
+  cursor: pointer;
+  border:none;
+  width:auto;/*Ajusta el Largo*/
+  height:auto; /*Ajusta el ancho*/
+  font-family: 'Roboto Condensed', sans-serif; /*Establece la tipografia*/
+  font-weight:bold;/*Aplica negritas al texto*/
+  font-size: 20px;/*Establece el tamaño de la letra*/
+}
+/*Sombrea el boton cuando pasa por encima el mouse*/
+.button:hover{
+ background-color: white;
+ border: 2px solid black;
 }

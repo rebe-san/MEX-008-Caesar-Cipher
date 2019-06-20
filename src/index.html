@@ -5,14 +5,9 @@
     <title>Caesar Cipher</title>
     <link rel="icon" type="image/png" href="Images/icons8-seguridad-48.png" /> <!--Pone una imagen en la barra de direcciones-->
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Noto+Sans+HK|Roboto+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
   </head>
-
   <body>
-
     <!--Pantalla inicio-->
     <div id="root" class="">
       <br>
@@ -21,8 +16,7 @@
       <br><br><br>
       <button id="start-button" class="button" >Comenzar</button>
     </div>
-
-    <!--Pantalla con las opciones de cifrar y descifrar -->  <!-- --><!-- -->
+    <!--Pantalla con las opciones de cifrar y descifrar -->
     <div id="menu" class="disappear">
       <br> <br><br>  <br> <br>
       <p style="font-family: 'Roboto', sans-serif; color: black">RECUERDA QUE AL SER INFORMACIÓN SENSIBLE:</p><br>
@@ -31,7 +25,6 @@
       <button id="hide-button-1" class="button">CIFRAR</button>
       <button id="discover-button-1" class="button">DESCIFRAR</button>
     </div>
-
     <!--Pantalla para cifrar mensaje -->
     <div id="hide-page" class="disappear">
       <label for="message-to-hide">Introduce la informacion del reporte que quieres cifrar</label>
@@ -41,9 +34,7 @@
       <br><br>
       <button id="hide-button-2" class="button" >CIFRAR</button>
       <br>
-
     </div>
-
     <!--Pantalla para descifrar mensaje -->
     <div id="discover-page" class="disappear">
       <label for="message-to-discover">Introduce la informacion del reporte que quieres descifrar</label>
@@ -54,8 +45,7 @@
       <br><br>
       <button id="discover-button-2" class="button">DESCIFRAR</button>
     </div>
-
-    <!--Muestra el mensaje cifrado -->
+    <!--Pantalla que muestra el mensaje cifrado -->
     <div id="show-hide-message-page" class="disappear">
       <p>REPORTE CIFRADO <img class="lock-image-1" src="Images/icons8-bloquear-64.png"></p>
       <p id="hide-message"></p>
@@ -63,18 +53,15 @@
       <button id="start-back-button-one" class="button">INICIO</button>
       <button id="menu-back-button-one" class="button">MENU</button>
     </div>
-
-    <!--Muestra el mensaje descifrado -->
+    <!--Pantalla que muestra el mensaje descifrado -->
     <div id="show-discover-message-page" class="disappear">
         <p>REPORTE DESCIFRADO <img class="lock-image-1" src="Images/icons8-desbloqueo-aprobado-64.png"></p>
         <p id="discover-message" ></p>
         <button id="start-back-button-two" class="button">INICIO</button>
         <button id="menu-back-button-two" class="button">MENU</button>
     </div>
-
+    <!--Archivo JS-->
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-
   </body>
-
 </html>

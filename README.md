@@ -18,9 +18,9 @@ En la actualidad, todos los cifrados de sustitución simple se descifran con muc
 
 ## Resumen del proyecto
 
-Este proyecto fue concebido para dar a conocer a socios o inversionistas de una empresa la situación financiera de la misma ,sin comprometer la información o que otros tengan acceso  ella.
+Este proyecto fue concebido para dar a conocer a socios o inversionistas de una empresa la situación financiera de la misma ,sin comprometer la información o que otros tengan acceso ella.
 
-La aplicación web permite a los encargados de administración de la empresa cifrar la información que sera enviada a los socios/inversionistas utilizando para ello el Cifrado Cesar, mencionado al inicio, cifrada la información sera enviada por los canales de comunicación permitidos , los socios recibirán la información cifrada y la aplicación web se encargara de descifrarla ,utilizando de nuevo el Cifrado Cesar,para tener el reporte de manera legible
+La aplicación web permite a los administrativos de una empresa cifrar la información que sera enviada a los socios/inversionistas utilizando para ello el Cifrado Cesar, mencionado al inicio, cifrada la información sera enviada por los canales de comunicación permitidos , los socios recibirán la información cifrada y la aplicación web se encargara de descifrarla ,utilizando de nuevo el Cifrado Cesar,para tener el reporte de manera legible.
 
 Para poder ejecutar la aplicación es necesario seguir la siguiente liga:
 [Cifrado César](https://rebe-san.github.io/MEX-008-Cipher/src/index.html)
@@ -28,17 +28,18 @@ Para poder ejecutar la aplicación es necesario seguir la siguiente liga:
 
 #### Definición del producto
 
-- Quiénes son los principales usuarios de producto:  
-Los usuarios son el personal administrativo y socios o inversionistas de la empresa.
+- Quiénes son los principales usuarios del producto:  
+Los usuarios son el personal administrativo o contable y socios o inversionistas de una empresa.
 - Cuáles son los objetivos de estos usuarios en relación con tu producto:  
-El objetivo es mantener de forma confidencial los reportes de estados financieros de una determinada empresa los cuales solo pueden ser leídos por el personal autorizado ,en este caso a los socios e inversionistas de la empresa.
+El objetivo es mantener de forma confidencial e ilegible para terceros ,los reportes de estados financieros de una determinada empresa, los cuales solo pueden ser leídos por el personal autorizado a quien se le brinda una llave de seguridad para poder tener acceso a ellos junto con la información cifrada.
 
 - Cómo crees que el producto que estás creando está resolviendo sus problemas:  
-Debido a que la información de la situación financiera de una empresa puede usarse de forma incorrecta para cometer fraudes o ilícitos , la información esta cifrada y solo puede ser leída por la personas autorizada que haya pedido el reporte para conocer la situación de la empresa en la que esta invirtiendo.
+Debido a que la información de la situación financiera de una empresa puede usarse para cometer fraudes o ilícitos , la información esta cifrada y solo puede ser leída por la persona autorizada que haya pedido el reporte para conocer la situación de la empresa en la que esta invirtiendo, lo cual evita mal uso de la información.
 
 #### Interfaz de usuario (UI)
 
 La interfaz permite al usuario:
+- Elegir entre Cifrar o Descifrar un reporte.
 - Escribir el reporte o información que queremos cifrar.
 - Elegir una llave de seguridad ( _offset_ en el Cifrado Cesar) indicando cuántas posiciones queremos que el cifrado desplace hacia la derecha cada carácter del reporte.
 - Ver el resultado del reporte cifrado.
@@ -51,12 +52,13 @@ La interfaz permite al usuario:
 
 - Ideación  
 Lo primero fue pensar en que situaciones se podría implementar el Cifrado Cesar para poder darle una utilidad practica.  
-Las primeras ideas que surgieron fueron realizar una aplicación web para un video juego donde se utilizara el cifrado , después la idea fue realizar una aplicación para mensajes secretos entre adolescentes o niñas , con el fin de compartir secretos.  
+Las primeras ideas que surgieron fueron realizar una aplicación web para un videojuego donde se utilizara el cifrado , después la idea fue realizar una aplicación para mensajes secretos entre adolescentes o niñas , con el fin de compartir secretos.  
 Finalmente la idea que fue tomada para el desarrollo del proyecto fue una aplicación para cifrar y descifrar información financiera de una empresa.
 
 - Prototipado (sketching)  
-Se realizo el prototipado en papel y se le dio interactividad a través de Marvel y el Sketch se realizo en Figma el cual se puede ver a continuación en la siguiente liga:  
+Se realizo el prototipado en papel y se le dio interactividad a través de la aplicación [Marvel][Prototipo en Marvel] para poder visualizar el flujo de la página web y se realizo el [Sketch][Prototipo en Figma] en Figma con la finalidad de ver la apariencia/diseño de la página web.    
 [Prototipo en Figma](https://www.figma.com/proto/HoZlqWnKvU3JMbza26I9yzYT/Sketch?node-id=4%3A7&scaling=min-zoom)
+[Prototipo en Marvel](https://marvelapp.com/)
 
 - Pruebas con usuarios (User Testing) e Iteración.  
-El User Testing se realizo solo a tres personas las cuales comentaron la falta de un botón de regreso al inicio , así como la falta de instrucciones en la parte de codificar. Ya no se realizo un nuevo sketch , con las modificaciones propuestas sino se decidió aplicar directamente estos cambios al proyecto.
+El User Testing se realizo solo a tres personas las cuales comentaron la falta de un botón de regreso al menú , así como la falta de instrucciones en la parte de codificar. Ya no se realizo un nuevo sketch on las modificaciones propuestas ,sino se decidió aplicar directamente estos cambios al proyecto.
