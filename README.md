@@ -28,13 +28,13 @@ Para poder ejecutar la aplicación es necesario seguir la siguiente liga:
 
 #### Definición del producto
 
-- Quiénes son los principales usuarios de producto.
-  Los usuarios son el personal administrativo y socios o inversionistas de la empresa.
-- Cuáles son los objetivos de estos usuarios en relación con tu producto.
-  El objetivo es mantener de forma confidencial los reportes de estados financieros de una determinada empresa los cuales solo pueden ser leídos por el personal autorizado ,en este caso a los socios e inversionistas de la empresa.
+- Quiénes son los principales usuarios de producto:  
+Los usuarios son el personal administrativo y socios o inversionistas de la empresa.
+- Cuáles son los objetivos de estos usuarios en relación con tu producto:  
+El objetivo es mantener de forma confidencial los reportes de estados financieros de una determinada empresa los cuales solo pueden ser leídos por el personal autorizado ,en este caso a los socios e inversionistas de la empresa.
 
-- Cómo crees que el producto que estás creando está resolviendo sus problemas.
-  Debido a que la información de la situación financiera de una empresa puede usarse de forma incorrecta para cometer fraudes o ilícitos , la información esta cifrada y solo puede ser leída por la personas autorizada que haya pedido el reporte para conocer la situación de la empresa en la que esta invirtiendo.
+- Cómo crees que el producto que estás creando está resolviendo sus problemas:  
+Debido a que la información de la situación financiera de una empresa puede usarse de forma incorrecta para cometer fraudes o ilícitos , la información esta cifrada y solo puede ser leída por la personas autorizada que haya pedido el reporte para conocer la situación de la empresa en la que esta invirtiendo.
 
 #### Interfaz de usuario (UI)
 
@@ -47,17 +47,16 @@ La interfaz permite al usuario:
 - Ver el resultado del reporte descifrado.
 
 
-####Diseño de experiencia de usuario (User Experience Design):
+#### Diseño de experiencia de usuario (User Experience Design):
 
-- Ideación
-  Lo primero fue pensar en que situaciones se podría implementar el Cifrado Cesar para poder darle una utilidad practica.
-  Las primeras ideas que surgieron fueron realizar una aplicación web para un video juego donde se utilizara el cifrado , después la idea fue realizar una aplicación para mensajes secretos entre adolescentes o niñas , con el fin de compartir secretos.
+- Ideación  
+Lo primero fue pensar en que situaciones se podría implementar el Cifrado Cesar para poder darle una utilidad practica.  
+Las primeras ideas que surgieron fueron realizar una aplicación web para un video juego donde se utilizara el cifrado , después la idea fue realizar una aplicación para mensajes secretos entre adolescentes o niñas , con el fin de compartir secretos.  
+Finalmente la idea que fue tomada para el desarrollo del proyecto fue una aplicación para cifrar y descifrar información financiera de una empresa.
 
-  Finalmente la idea que fue tomada para el desarrollo del proyecto fue una aplicación para cifrar y descifrar información financiera de una empresa.
+- Prototipado (sketching)  
+Se realizo el prototipado en papel y se le dio interactividad a través de Marvel y el Sketch se realizo en Figma el cual se puede ver a continuación en la siguiente liga:  
+[Prototipo en Figma](https://www.figma.com/proto/HoZlqWnKvU3JMbza26I9yzYT/Sketch?node-id=4%3A7&scaling=min-zoom)
 
-- Prototipado (sketching)
-  Se realizo el prototipado en papel y se le dio interactividad a través de Marvel y el Sketch se realizo en Figma el cual se puede ver a continuación en la siguiennte liga:
-  [Prototipo en Figma](https://www.figma.com/proto/HoZlqWnKvU3JMbza26I9yzYT/Sketch?node-id=12%3A39&scaling=min-zoom)
-
-- Pruebas con usuarios (User Testing) e Iteración.
-  El User Testing se realizo solo a tres personas las cuales comentaron la falta de un botón de regreso al inicio , así como la falta de instrucciones en la parte de codificar. Ya no se realizo un nuevo sketch , con las modificaciones propuestas sino se decidió aplicar directamente estos cambios al proyecto.
+- Pruebas con usuarios (User Testing) e Iteración.  
+El User Testing se realizo solo a tres personas las cuales comentaron la falta de un botón de regreso al inicio , así como la falta de instrucciones en la parte de codificar. Ya no se realizo un nuevo sketch , con las modificaciones propuestas sino se decidió aplicar directamente estos cambios al proyecto.
